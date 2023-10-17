@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Dancing+Script:wght@700&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body{
+  color:#fff;
+  background: linear-gradient( 45deg,#00BFFF, #0000CD,#000,#000, #000, #0000cd, #00bfff);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+}
+
+
+.main{
+  padding: 1rem;
+  margin:.5rem;
+  border: 1px solid #fff;
+  border-radius: .5rem;
+  
+}
+
+
+
+h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+p{
+  font-family: 'Dancing Script', cursive;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  letter-spacing: 3.5px;
+}
+
+@midia only screen and(min-width: 768px;{
+  .main{
+    max-width: 1024px;
+    margin:1rem auto;
+  }
+  
+  .main::before, .main::after{
+    width:70vh;
+  }
+}

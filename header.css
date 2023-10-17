@@ -1,0 +1,54 @@
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header .photo{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+
+.header .title{
+  text-align: center;
+
+}
+
+.information{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.information p{
+  margin: .5rem;
+}
+
+
+
+@midia only screen and(min-width: 768px;){
+  .header{
+    display:grid;
+    grid-template-area:
+    "photo title",
+    "photo information";
+  }
+  
+  .header .photo{
+    grid-area:photo;
+    margin:0 auto;
+  }
+  
+  .header .title{
+    grid-area:title;
+    text-align:start;
+    max-width: 200px;
+  }
+  
+  .header .information{
+    grid-area:information;
+  }
+}
